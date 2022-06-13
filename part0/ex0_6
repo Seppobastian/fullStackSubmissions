@@ -1,0 +1,12 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: {"message":"note created"}
+
+note over server:
+server gets a post request and updates 
+the database with the new note.
+end note
+
+note over browser:
+browser executes the event handler
+that renders notes to display
+end note
