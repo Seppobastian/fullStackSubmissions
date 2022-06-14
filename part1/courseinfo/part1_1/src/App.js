@@ -15,9 +15,18 @@ const App = () => {
       </h1>
     )
   }
+
+  const Part = (props) =>{
+    return(
+      <p>
+        {props.data[0]} {props.data[1]}
+      </p>
+    )
+  }
+
   const Content = (props) =>{
     return(
-      props.data.map(d => <p>{d[0]} {d[1]}</p>)
+      props.data.map(d => <Part data={d} />)
     )
   }
   const Total = (props) =>{
